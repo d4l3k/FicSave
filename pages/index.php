@@ -10,30 +10,30 @@
         <meta name="description" content="An open-source online fanfiction downloader. Download fanfics as eBooks from various sources online, for free.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png?v=rMMlz4K2XJ">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png?v=rMMlz4K2XJ">
-        <link rel="icon" type="image/png" href="/favicon-32x32.png?v=rMMlz4K2XJ" sizes="32x32">
-        <link rel="icon" type="image/png" href="/android-chrome-192x192.png?v=rMMlz4K2XJ" sizes="192x192">
-        <link rel="icon" type="image/png" href="/favicon-96x96.png?v=rMMlz4K2XJ" sizes="96x96">
-        <link rel="icon" type="image/png" href="/favicon-16x16.png?v=rMMlz4K2XJ" sizes="16x16">
-        <link rel="manifest" href="/manifest.json?v=rMMlz4K2XJ">
-        <link rel="shortcut icon" href="/favicon.ico?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png?v=rMMlz4K2XJ">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png?v=rMMlz4K2XJ">
+        <link rel="icon" type="image/png" href="favicon-32x32.png?v=rMMlz4K2XJ" sizes="32x32">
+        <link rel="icon" type="image/png" href="android-chrome-192x192.png?v=rMMlz4K2XJ" sizes="192x192">
+        <link rel="icon" type="image/png" href="favicon-96x96.png?v=rMMlz4K2XJ" sizes="96x96">
+        <link rel="icon" type="image/png" href="favicon-16x16.png?v=rMMlz4K2XJ" sizes="16x16">
+        <link rel="manifest" href="manifest.json?v=rMMlz4K2XJ">
+        <link rel="shortcut icon" href="favicon.ico?v=rMMlz4K2XJ">
         <meta name="apple-mobile-web-app-title" content="FicSave">
         <meta name="application-name" content="FicSave">
         <meta name="msapplication-TileColor" content="#64b5f6">
-        <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=rMMlz4K2XJ">
+        <meta name="msapplication-TileImage" content="mstile-144x144.png?v=rMMlz4K2XJ">
         <meta name="theme-color" content="#64b5f6">
 
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="/css/main.css?v=2.2" media="screen,projection"/>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/main.css?v=2.2" media="screen,projection"/>
     </head>
     <body>
         <main class="valign-wrapper grey-text text-lighten-4">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <form id="download" class="col s12" action="/api/downloader/begin" method="POST">
+                    <form id="download" class="col s12" action="api/downloader/begin" method="POST">
                         <div class="row">
                             <div class="input-field col s9 l5">
                                 <input id="url" type="url" name="url" class="validate"<?= isset($_GET['url']) ? ' value="'.$_GET['url'].'"' : '' ?>>
@@ -285,14 +285,14 @@
                 </div>
             </div>
         </footer>
-        <script src="/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/bin/materialize.min.js"></script>
-        <script src="/js/main.js?v=2"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/bin/materialize.min.js"></script>
+        <script src="js/main.js?v=2"></script>
         <script>
-            $.post('/api/downloader/begin', { resume: 1, currentId: '<?= $_SESSION['currentId'] ?>' })
+            $.post('api/downloader/begin', { resume: 1, currentId: '<?= $_SESSION['currentId'] ?>' })
                 .done(function(data) {
                     if (data.success) {
                         buildTable(data);
@@ -316,7 +316,7 @@
 
             $('#download').submit(function() {
                 var $downloadButton = $('#download').find('button');
-                $.post('/api/downloader/begin', $(this).serialize())
+                $.post('api/downloader/begin', $(this).serialize())
                     .done(function(data) {
                         $downloadButton.text('Download');
                         if (data.success) {
@@ -364,7 +364,7 @@
             }
 
             function processLoop() {
-                $.post('/api/downloader/process', { currentId: '<?= $_SESSION['currentId'] ?>' })
+                $.post('api/downloader/process', { currentId: '<?= $_SESSION['currentId'] ?>' })
                     .done(function(data) {
                         if (data.success) {
                             // update table
@@ -403,7 +403,7 @@
                                         case <?= Status::DONE ?>:
                                         case <?= Status::SERVED ?>:
                                             $downloadingSpan.hide();
-                                            var url = '/download/' + downloadId;
+                                            var url = 'download/' + downloadId;
                                             $statusSpan.html('<a href="'+url+'" class="blue-text text-lighten-3">Download File</a>');
                                             $statusSpan.show();
                                             if (download.status == <?= Status::DONE ?>) {
@@ -435,8 +435,9 @@
                             Materialize.toast(data.message, 5000, 'rounded');
                         }
                     })
-                    .fail(function() {
-                        window.location.href = '/';
+                    .fail(function(data) {
+                        console.log(data);
+                        //window.location.href = '/';
                     });
             }
         </script>

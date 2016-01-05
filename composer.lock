@@ -5,19 +5,20 @@
         "This file is @generated automatically"
     ],
     "hash": "1dab2f211915774e5540315e57ff770d",
+    "content-hash": "4472a86b5432e3159e7438bbc0ee758f",
     "packages": [
         {
             "name": "grandt/binstring",
-            "version": "0.2.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grandt/PHPBinString.git",
-                "reference": "fc619d3eb291cd953166e0143c43ca2b3137622f"
+                "reference": "825fe2ac8a68190f651fc2dbc07b6edde18bc431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grandt/PHPBinString/zipball/fc619d3eb291cd953166e0143c43ca2b3137622f",
-                "reference": "fc619d3eb291cd953166e0143c43ca2b3137622f",
+                "url": "https://api.github.com/repos/Grandt/PHPBinString/zipball/825fe2ac8a68190f651fc2dbc07b6edde18bc431",
+                "reference": "825fe2ac8a68190f651fc2dbc07b6edde18bc431",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +31,7 @@
                     "BinStringStatic.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -47,20 +48,20 @@
                 "binary strings",
                 "mbstring"
             ],
-            "time": "2014-08-05 06:21:17"
+            "time": "2015-08-13 06:14:41"
         },
         {
             "name": "grandt/phpepub",
-            "version": "4.0.1",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grandt/PHPePub.git",
-                "reference": "8d790c6dee0dbf69cd94a11c4bc46551a6e5a11f"
+                "reference": "dee0c5549a8d2c6bf6a1ad5b4ee21d245b711fca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grandt/PHPePub/zipball/8d790c6dee0dbf69cd94a11c4bc46551a6e5a11f",
-                "reference": "8d790c6dee0dbf69cd94a11c4bc46551a6e5a11f",
+                "url": "https://api.github.com/repos/Grandt/PHPePub/zipball/dee0c5549a8d2c6bf6a1ad5b4ee21d245b711fca",
+                "reference": "dee0c5549a8d2c6bf6a1ad5b4ee21d245b711fca",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +79,7 @@
                     "src/lib.uuid.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -96,7 +97,7 @@
                 "e-book",
                 "epub"
             ],
-            "time": "2015-07-02 04:24:38"
+            "time": "2015-09-15 08:47:09"
         },
         {
             "name": "grandt/phpresizegif",
@@ -125,7 +126,7 @@
                     "grandt\\ResizeGif\\Debug\\": "src/ResizeGif/Debug"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -149,20 +150,20 @@
         },
         {
             "name": "grandt/phpzipmerge",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grandt/PHPZipMerge.git",
-                "reference": "b254713a341b94794f2a97112c470216460a4995"
+                "reference": "0b1273d3c2dbfe244904158b1dbd65a663264fb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grandt/PHPZipMerge/zipball/b254713a341b94794f2a97112c470216460a4995",
-                "reference": "b254713a341b94794f2a97112c470216460a4995",
+                "url": "https://api.github.com/repos/Grandt/PHPZipMerge/zipball/0b1273d3c2dbfe244904158b1dbd65a663264fb9",
+                "reference": "0b1273d3c2dbfe244904158b1dbd65a663264fb9",
                 "shasum": ""
             },
             "require": {
-                "grandt/binstring": ">=0.2.0",
+                "grandt/binstring": ">=1.0.0",
                 "grandt/relativepath": ">=1.0.1",
                 "php": ">=5.3.0"
             },
@@ -172,7 +173,7 @@
                     "ZipMerge\\": "src/ZipMerge"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -201,7 +202,7 @@
                 "stream",
                 "zip"
             ],
-            "time": "2015-04-30 06:35:34"
+            "time": "2015-08-18 13:49:33"
         },
         {
             "name": "grandt/relativepath",
@@ -226,7 +227,7 @@
                     "RelativePath.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -278,7 +279,7 @@
                     "Masterminds\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -311,22 +312,22 @@
         },
         {
             "name": "phpzip/phpzip",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Grandt/PHPZip.git",
-                "reference": "a43a7ce8b2f21050f8b143876c5c1661b0d65306"
+                "reference": "936f93d656f68e29c231a39e19fd59a636fe7e47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Grandt/PHPZip/zipball/a43a7ce8b2f21050f8b143876c5c1661b0d65306",
-                "reference": "a43a7ce8b2f21050f8b143876c5c1661b0d65306",
+                "url": "https://api.github.com/repos/Grandt/PHPZip/zipball/936f93d656f68e29c231a39e19fd59a636fe7e47",
+                "reference": "936f93d656f68e29c231a39e19fd59a636fe7e47",
                 "shasum": ""
             },
             "require": {
-                "grandt/binstring": ">=0.2.0",
-                "grandt/phpzipmerge": ">=1.0.3",
-                "grandt/relativepath": ">=1.0.1",
+                "grandt/binstring": ">=1.0.0",
+                "grandt/phpzipmerge": ">=1.0.4",
+                "grandt/relativepath": ">=1.0.2",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -335,7 +336,7 @@
                     "PHPZip\\Zip\\": "src/Zip"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "LGPL-2.1"
             ],
@@ -368,23 +369,24 @@
                 "stream",
                 "zip"
             ],
-            "time": "2015-04-30 06:45:53"
+            "time": "2015-11-16 16:30:51"
         },
         {
             "name": "querypath/querypath",
-            "version": "3.0.3",
+            "version": "3.04",
             "source": {
                 "type": "git",
                 "url": "https://github.com/technosophos/querypath.git",
-                "reference": "13224745f7348e099d2dde9e555bc8972c21a810"
+                "reference": "20e8a1ea75840ad61fe2664f7d8658daa05d4348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/technosophos/querypath/zipball/13224745f7348e099d2dde9e555bc8972c21a810",
-                "reference": "13224745f7348e099d2dde9e555bc8972c21a810",
+                "url": "https://api.github.com/repos/technosophos/querypath/zipball/20e8a1ea75840ad61fe2664f7d8658daa05d4348",
+                "reference": "20e8a1ea75840ad61fe2664f7d8658daa05d4348",
                 "shasum": ""
             },
             "require": {
+                "masterminds/html5": "2.*",
                 "php": ">=5.3.0"
             },
             "type": "library",
@@ -396,7 +398,7 @@
                     "src/qp_functions.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -409,7 +411,7 @@
                 "xml",
                 "xslt"
             ],
-            "time": "2014-09-23 19:04:19"
+            "time": "2015-10-10 20:46:32"
         },
         {
             "name": "slim/logger",
@@ -435,7 +437,7 @@
                     "Slim\\Logger\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -475,7 +477,7 @@
                     "Slim": "."
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "http://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],

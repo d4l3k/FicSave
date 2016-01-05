@@ -34,6 +34,7 @@ $app->get("/reset", function() use ($app) {
     $app->redirect('/');
 });
 
+
 $app->group("/api", function() use ($app) {
     $app->group("/downloader", function() use ($app) {
         $app->post("/begin", function() use ($app) {
@@ -42,6 +43,10 @@ $app->group("/api", function() use ($app) {
 
             $url = $app->request->post('url');
             $format = $app->request->post('format');
+            $validFormats = array("epub", "pdf", "txt", "mobi");
+            if (!in_array($format, $validFormats)) {
+              $format = "epub";
+            }
             $email = $app->request->post('email');
             $resume = $app->request->post('resume');
             $currentId = $app->request->post('currentId');
@@ -172,13 +177,14 @@ $app->group("/api", function() use ($app) {
                             if ($download['status'] != Status::ERROR) {
                                 if ($book->finalize()) {
                                     $fileName = $download['id']."_".$download['story']['title']." - ".$download['story']['author'];
+                                    $fileName = $book->sanitizeFileName($fileName);
                                     $filePath = dirname(__FILE__).DIRECTORY_SEPARATOR."tmp";
                                     if ($book->saveBook($fileName, $filePath) === FALSE) {
                                         $download['status'] = Status::ERROR;
                                         $download['statusMessage'] = "Failed to generate eBook.";
                                         unset($_SESSION[$download['id']]);
                                     } else {
-                                        $download['fileName'] = $book->sanitizeFileName($fileName);
+                                        $download['fileName'] = $fileName;
                                         $fileNameWithPath = $filePath.DIRECTORY_SEPARATOR.$download['fileName'];
                                         if ($download['format'] != 'epub') {
                                             if (file_exists("{$fileNameWithPath}.{$download['format']}")) {
@@ -270,6 +276,7 @@ $app->get("/download/:bookId", function($bookId) use ($app) {
         if ($download['status'] >= Status::DONE) {
             $fileName = "{$download['fileName']}.{$download['format']}";
             $fileNameWithPath = dirname(__FILE__).DIRECTORY_SEPARATOR."tmp".DIRECTORY_SEPARATOR.$fileName;
+            print("done {$fileNameWithPath}");
             if (file_exists($fileNameWithPath)) {
                 $_SESSION['downloads'][$bookId]['status'] = Status::SERVED;
                 $rename = "{$download['story']['title']} - {$download['story']['author']}.{$download['format']}";
@@ -288,7 +295,7 @@ $app->get("/download/:bookId", function($bookId) use ($app) {
             }
         }
     }
-    $app->notFound();
+    //$app->notFound();
 });
 
 $app->run();
